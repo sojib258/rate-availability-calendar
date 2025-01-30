@@ -120,3 +120,27 @@ You can find a working Postman collection for this API [here](https://www.postma
 - Feel free to reach out if you have any questions or need further clarification on the requirements.
 
 Good luck, and we look forward to reviewing your implementation!
+
+# Add Infinite Scroll Documentation
+
+## Change the file format
+
+**Before:**:
+
+- hooks are defined inside the app router.
+- components are defined inside app router
+
+**After:**:
+
+- hooks are defined in a seperate folder for better looks.
+- components are defined also a seperate folder for better consistency
+
+## Change Inside the Hook
+
+- update the hook useQuery to useInfiniteQuery for infinite scroll
+- pass the cursor query for handle infinite scroll
+
+## Change In The Component
+
+- Take a root index.ts file in the components folder. Add all of our other components so that we can use anywhere our components from a root directory.
+- Break down the components for better code readability.
